@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpView" customModule="Courial" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="jg0-QQ-gwx" id="WE4-Xl-IY0"/>
+                <outlet property="bottom" destination="RnX-c7-8Sg" id="5m9-lq-eis"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jg0-QQ-gwx">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcV-91-6TR">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </button>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOb-r9-eH6" customClass="UIViewCustomClass" customModule="Courial" customModuleProvider="target">
+                    <rect key="frame" x="55" y="506" width="304" height="126"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-wU-Bki">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="126"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLK-aV-GCt" customClass="UIButtonCustomClass" customModule="Courial" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
+                                    <color key="backgroundColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="cqD-4r-dsc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                    <state key="normal" title="RESCHEDULE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="rescheduleBtn:" destination="-1" eventType="touchUpInside" id="dLx-O2-kKj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dy-WS-Gd2" customClass="UIButtonCustomClass" customModule="Courial" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="43" width="304" height="40"/>
+                                    <color key="backgroundColor" red="0.20392156859999999" green="0.28563144800000001" blue="0.36811667679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="WkL-o4-1MH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                    <state key="normal" title="MODIFY">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="modifyBtn:" destination="-1" eventType="touchUpInside" id="ely-U9-7Dj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B4-jO-Yse" customClass="UIButtonCustomClass" customModule="Courial" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="86" width="304" height="40"/>
+                                    <color key="backgroundColor" red="0.9152866006" green="0.24655312300000001" blue="0.20107686520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="GOa-zb-UNX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                    <state key="normal" title="CANCEL DELIVERY">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelBtn:" destination="-1" eventType="touchUpInside" id="dqE-Io-v9b"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08L-6i-Jtg" customClass="UIButtonCustomClass" customModule="Courial" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="126" width="304" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="5Fn-81-Ldu"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                    <state key="normal" title="DO NOT CANCEL">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="doNotCancelBtn:" destination="-1" eventType="touchUpInside" id="C7P-fz-4XX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xrM-wU-Bki" secondAttribute="trailing" id="6dK-tw-Rfr"/>
+                        <constraint firstAttribute="bottom" secondItem="xrM-wU-Bki" secondAttribute="bottom" id="889-Qr-a5J"/>
+                        <constraint firstItem="xrM-wU-Bki" firstAttribute="leading" secondItem="SOb-r9-eH6" secondAttribute="leading" id="Pl1-SE-3qw"/>
+                        <constraint firstItem="xrM-wU-Bki" firstAttribute="top" secondItem="SOb-r9-eH6" secondAttribute="top" id="d5h-CK-T3T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SOb-r9-eH6" firstAttribute="leading" secondItem="kao-10-Iaf" secondAttribute="leading" constant="55" id="0Xv-cc-dgg"/>
+                <constraint firstItem="kao-10-Iaf" firstAttribute="bottom" secondItem="bcV-91-6TR" secondAttribute="bottom" id="LmV-Q2-250"/>
+                <constraint firstItem="bcV-91-6TR" firstAttribute="leading" secondItem="kao-10-Iaf" secondAttribute="leading" id="PLo-fU-U4o"/>
+                <constraint firstItem="kao-10-Iaf" firstAttribute="bottom" secondItem="SOb-r9-eH6" secondAttribute="bottom" constant="230" id="RnX-c7-8Sg"/>
+                <constraint firstItem="bcV-91-6TR" firstAttribute="top" secondItem="kao-10-Iaf" secondAttribute="top" id="euw-Ta-c2p"/>
+                <constraint firstItem="kao-10-Iaf" firstAttribute="trailing" secondItem="SOb-r9-eH6" secondAttribute="trailing" constant="55" id="hi3-Zu-cFb"/>
+                <constraint firstItem="kao-10-Iaf" firstAttribute="trailing" secondItem="bcV-91-6TR" secondAttribute="trailing" id="kh9-hZ-dHL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="kao-10-Iaf"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="-1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="137.68115942028987" y="148.66071428571428"/>
+        </view>
+    </objects>
+</document>

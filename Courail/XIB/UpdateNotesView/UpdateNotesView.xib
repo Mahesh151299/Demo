@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateNotesView" customModule="Courial" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="MKY-HQ-0U1" id="tj1-X4-9zu"/>
+                <outlet property="itemNameTF" destination="ENr-sB-ep5" id="A2Q-wQ-bgO"/>
+                <outlet property="itemNameView" destination="0tR-ih-45c" id="Uyj-PJ-qMF"/>
+                <outlet property="textView" destination="fcZ-8m-4pK" id="6cc-zM-Web"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MKY-HQ-0U1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpI-uy-AQK" customClass="UIViewCustomClass" customModule="Courial" customModuleProvider="target">
+                    <rect key="frame" x="30" y="300.5" width="354" height="305"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMB-V9-zBq">
+                            <rect key="frame" x="154.5" y="25" width="45" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Ihm-6v-LPZ"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="imgCross"/>
+                            <connections>
+                                <action selector="closeBtn:" destination="-1" eventType="touchUpInside" id="oGO-kP-p1D"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HQ6-Cr-nLZ">
+                            <rect key="frame" x="15" y="95" width="324" height="115"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tR-ih-45c" customClass="UIViewCustomClass" customModule="Courial" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="324" height="35"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What's being picked up?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ENr-sB-ep5">
+                                            <rect key="frame" x="10" y="0.0" width="304" height="35"/>
+                                            <color key="tintColor" red="1" green="0.35528376699999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="ENr-sB-ep5" firstAttribute="top" secondItem="0tR-ih-45c" secondAttribute="top" id="231-Kv-ANz"/>
+                                        <constraint firstAttribute="height" constant="35" id="7Bs-Bp-m0f"/>
+                                        <constraint firstAttribute="trailing" secondItem="ENr-sB-ep5" secondAttribute="trailing" constant="10" id="BfP-xT-Fo7"/>
+                                        <constraint firstItem="ENr-sB-ep5" firstAttribute="leading" secondItem="0tR-ih-45c" secondAttribute="leading" constant="10" id="PvG-Pl-sBC"/>
+                                        <constraint firstAttribute="bottom" secondItem="ENr-sB-ep5" secondAttribute="bottom" id="n0I-uV-NrU"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vb-Pz-Xmd" customClass="UIViewCustomClass" customModule="Courial" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="45" width="324" height="70"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fcZ-8m-4pK" customClass="IQTextView" customModule="IQKeyboardManagerSwift">
+                                            <rect key="frame" x="5" y="5" width="314" height="60"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="1Oh-Zv-qHj"/>
+                                            </constraints>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Update pickup notes"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="fcZ-8m-4pK" firstAttribute="top" secondItem="9vb-Pz-Xmd" secondAttribute="top" constant="5" id="Jii-0G-2U6"/>
+                                        <constraint firstAttribute="trailing" secondItem="fcZ-8m-4pK" secondAttribute="trailing" constant="5" id="Mve-kv-RJH"/>
+                                        <constraint firstItem="fcZ-8m-4pK" firstAttribute="leading" secondItem="9vb-Pz-Xmd" secondAttribute="leading" constant="5" id="VaM-O5-CcF"/>
+                                        <constraint firstAttribute="bottom" secondItem="fcZ-8m-4pK" secondAttribute="bottom" constant="5" id="WZE-GY-Sfu"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz0-6u-3ip" customClass="UIButtonCustomClass" customModule="Courial" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="235" width="354" height="70"/>
+                            <color key="backgroundColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="n4P-jr-rHx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="22"/>
+                            <state key="normal" title="Continue"/>
+                            <connections>
+                                <action selector="applyBtn:" destination="-1" eventType="touchUpInside" id="KOh-aa-mnF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="HQ6-Cr-nLZ" firstAttribute="top" secondItem="QMB-V9-zBq" secondAttribute="bottom" constant="25" id="794-8f-gAL"/>
+                        <constraint firstItem="Tz0-6u-3ip" firstAttribute="top" secondItem="HQ6-Cr-nLZ" secondAttribute="bottom" constant="25" id="BYa-4E-Rd1"/>
+                        <constraint firstAttribute="trailing" secondItem="HQ6-Cr-nLZ" secondAttribute="trailing" constant="15" id="QrE-MI-n71"/>
+                        <constraint firstAttribute="bottom" secondItem="Tz0-6u-3ip" secondAttribute="bottom" id="X8b-j1-Zpx"/>
+                        <constraint firstItem="QMB-V9-zBq" firstAttribute="width" secondItem="QMB-V9-zBq" secondAttribute="height" id="XcX-wB-7dh"/>
+                        <constraint firstItem="HQ6-Cr-nLZ" firstAttribute="leading" secondItem="OpI-uy-AQK" secondAttribute="leading" constant="15" id="c67-CM-MK1"/>
+                        <constraint firstItem="QMB-V9-zBq" firstAttribute="centerX" secondItem="OpI-uy-AQK" secondAttribute="centerX" id="mrg-Yf-mL9"/>
+                        <constraint firstAttribute="trailing" secondItem="Tz0-6u-3ip" secondAttribute="trailing" id="nFu-kt-bFf"/>
+                        <constraint firstItem="Tz0-6u-3ip" firstAttribute="leading" secondItem="OpI-uy-AQK" secondAttribute="leading" id="ncR-gP-NBJ"/>
+                        <constraint firstItem="QMB-V9-zBq" firstAttribute="top" secondItem="OpI-uy-AQK" secondAttribute="top" constant="25" id="uDk-7z-J0y"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ytk-Hv-cZn"/>
+            <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ytk-Hv-cZn" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OpI-uy-AQK" secondAttribute="bottom" constant="50" id="8dO-ZJ-6Gm"/>
+                <constraint firstItem="OpI-uy-AQK" firstAttribute="centerY" secondItem="ytk-Hv-cZn" secondAttribute="centerY" id="CA2-7L-pMV"/>
+                <constraint firstItem="OpI-uy-AQK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ytk-Hv-cZn" secondAttribute="top" constant="50" id="QzS-fe-C7M"/>
+                <constraint firstItem="ytk-Hv-cZn" firstAttribute="trailing" secondItem="OpI-uy-AQK" secondAttribute="trailing" constant="30" id="SbQ-1J-Cby"/>
+                <constraint firstItem="OpI-uy-AQK" firstAttribute="leading" secondItem="ytk-Hv-cZn" secondAttribute="leading" constant="30" id="mSQ-Ju-BOC"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="-1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="137.68115942028987" y="148.66071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgCross" width="40" height="40"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewArea" customModule="Courial" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="eNh-ho-lBC" id="u9W-qK-GIe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eNh-ho-lBC">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iQ-g3-BLY" customClass="UIViewCustomClass" customModule="Courial" customModuleProvider="target">
+                    <rect key="frame" x="87" y="338" width="240" height="230"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tT-cv-0UV">
+                            <rect key="frame" x="97.5" y="25" width="45" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="IVx-uB-yGf"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="imgCross"/>
+                            <connections>
+                                <action selector="closeBtn:" destination="-1" eventType="touchUpInside" id="BjN-gA-hvD"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dAU-mZ-VsO">
+                            <rect key="frame" x="25" y="95" width="190" height="110"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Y2-IU-qF1" customClass="UIButtonCustomClass" customModule="Courial" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="190" height="35"/>
+                                    <color key="backgroundColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="9gJ-wN-JFb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                    <state key="normal" title="VIEW AREA MAP"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="viewMap:" destination="-1" eventType="touchUpInside" id="sEo-2n-s7h"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Nearby Courials" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrj-AF-Da2">
+                                    <rect key="frame" x="0.0" y="40" width="190" height="20"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4o-L6-NRj">
+                                    <rect key="frame" x="0.0" y="65" width="190" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYQ-z6-tEC" customClass="UIButtonCustomClass" customModule="Courial" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="10" width="190" height="35"/>
+                                            <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="ama-Ze-wQv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                            <state key="normal" title="SKIP FOR NOW"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="skipBtn:" destination="-1" eventType="touchUpInside" id="70t-NS-2tF"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="cYQ-z6-tEC" secondAttribute="trailing" id="GFr-10-FRE"/>
+                                        <constraint firstAttribute="bottom" secondItem="cYQ-z6-tEC" secondAttribute="bottom" id="c1n-gu-YYT"/>
+                                        <constraint firstItem="cYQ-z6-tEC" firstAttribute="top" secondItem="K4o-L6-NRj" secondAttribute="top" constant="10" id="c5y-4c-R0G"/>
+                                        <constraint firstItem="cYQ-z6-tEC" firstAttribute="leading" secondItem="K4o-L6-NRj" secondAttribute="leading" id="zCR-u3-xLa"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="190" id="sk3-jC-bIm"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dAU-mZ-VsO" secondAttribute="trailing" constant="25" id="Odb-Pn-RVG"/>
+                        <constraint firstItem="dAU-mZ-VsO" firstAttribute="top" secondItem="2tT-cv-0UV" secondAttribute="bottom" constant="25" id="Ro7-ya-SdU"/>
+                        <constraint firstItem="2tT-cv-0UV" firstAttribute="width" secondItem="2tT-cv-0UV" secondAttribute="height" id="cIG-0Q-Zsr"/>
+                        <constraint firstItem="2tT-cv-0UV" firstAttribute="centerX" secondItem="3iQ-g3-BLY" secondAttribute="centerX" id="fLO-Sz-Zh3"/>
+                        <constraint firstAttribute="bottom" secondItem="dAU-mZ-VsO" secondAttribute="bottom" constant="25" id="pdJ-c0-UIp"/>
+                        <constraint firstItem="dAU-mZ-VsO" firstAttribute="leading" secondItem="3iQ-g3-BLY" secondAttribute="leading" constant="25" id="vB4-pc-E5J"/>
+                        <constraint firstItem="2tT-cv-0UV" firstAttribute="top" secondItem="3iQ-g3-BLY" secondAttribute="top" constant="25" id="yyB-pW-crK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="t2o-2q-dsY"/>
+            <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3iQ-g3-BLY" firstAttribute="centerY" secondItem="t2o-2q-dsY" secondAttribute="centerY" id="ZTI-7R-fpe"/>
+                <constraint firstItem="3iQ-g3-BLY" firstAttribute="centerX" secondItem="t2o-2q-dsY" secondAttribute="centerX" id="fjc-PG-dOz"/>
+                <constraint firstItem="3iQ-g3-BLY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="t2o-2q-dsY" secondAttribute="top" constant="50" id="l0b-5g-s8e"/>
+                <constraint firstItem="t2o-2q-dsY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3iQ-g3-BLY" secondAttribute="bottom" constant="50" id="s7D-wO-2Vh"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="-1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="137.68115942028987" y="148.66071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgCross" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
